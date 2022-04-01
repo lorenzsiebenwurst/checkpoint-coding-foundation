@@ -23,7 +23,7 @@ function filterApiData(apiData, mandatoryKeys) {
 
     for (let i = 0; i < mandatoryKeys.length; i++) {
       if (!arr.includes(mandatoryKeys[i])) {
-        return false;
+        isIncluded = false;
       }
     }
     if (isIncluded === true) {
